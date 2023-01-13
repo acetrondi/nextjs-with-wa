@@ -20,6 +20,7 @@ export default function handler(req, res) {
         }
     }
     if (req.method == 'POST') {
+        
         let body_param=req.body;
 
         console.log(JSON.stringify(body_param,null,2));
@@ -55,9 +56,9 @@ export default function handler(req, res) {
     
                    });
     
-                   res.sendStatus(200);
+                   res.send(200);
                 }else{
-                    res.sendStatus(404);
+                    res.send(404);
                 }
     
         }

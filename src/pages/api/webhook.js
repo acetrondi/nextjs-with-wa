@@ -1,6 +1,8 @@
+import axios from "axios";
+
 export default function handler(req, res) {
     const token = process.env.TOKEN;
-    const mytoken = process.env.WA_MYTOKEN;
+    const mytoken = process.env.WA_MYTOKEN;//WhatsappTestingAcetrondi
     if (req.method === 'GET') {
         let mode = req.query["hub.mode"];
         let challange = req.query["hub.challenge"];
